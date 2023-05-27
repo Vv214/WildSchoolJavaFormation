@@ -1,0 +1,47 @@
+div.scroll_Menu {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 30%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-x: auto;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    border-radius: 8px;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homePage {
+    display: flex;
+}
+
+.Videos {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+}
+
+article {
+    padding-left: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
