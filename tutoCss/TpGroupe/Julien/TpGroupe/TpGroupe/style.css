@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*-----------------header------------------------------*/
+
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* background: #29a657; */
+}
+
+.logoburger {
+    display: flex;
+    flex: 1;
+}
+
+.header_right_side {
+    display: flex;
+    flex: 0.25;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex: 1.5;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+#maRecherche {
+    border-radius: 8px;
+    width: 32em;
+    height: 2em;
+    margin-top: 1.5em;
+}
+
+#loupe {
+    border: none;
+    width: 60px;
+    height: 30px;
+    padding-top: 1.1em;
+    padding-left: 0.6em;
+
+}
+
+
+
+/*------------------------------------------------------
+---------------------------BODY------------------------*/
+.sidebar {
+    max-height: vh;
+    padding-top: 80px;
+    /* background: #ac2f2f; */
+    width: 500px;
+}
+
+.sidebaricons:hover {
+    background-color: antiquewhite;
+}
+
+ul {
+    list-style: none;
+}
+
+.sidebaricons img {
+    height: 50px;
+    width: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    /* background: #7054de; */
+}
+
+.principal {
+    padding: 20px 0 0 20px;
+}
+
+.raccourcis {
+    margin-bottom: 20px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: 224, 227, 213;
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.videos img {
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Créer pour centre les commentaires des videos */
+.descriptionVideos {
+    max-width: 500px;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+
+
+
+
+
+
+
+/* div.scroll_Menu {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 30%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-x: auto;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    border-radius: 8px;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homePage {
+    display: flex;
+}
+
+.Videos {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+}
+
+article {
+    padding-left: 1.5em;
+    display: flex;
+    flex-direction: row;
+} */
