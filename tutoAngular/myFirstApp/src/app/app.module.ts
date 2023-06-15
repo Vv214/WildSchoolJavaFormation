@@ -7,16 +7,20 @@ import { SignupComponent } from './component/signup/signup.component';
 import { UserComponent } from './component/user/user.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ROUTES } from 'src/app/app.routes';
+import { MyFormComponent } from './component/my-form/my-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     SignupComponent,
-    UserComponent
+    UserComponent,
+    MyFormComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES),
   ],
   providers: [],
