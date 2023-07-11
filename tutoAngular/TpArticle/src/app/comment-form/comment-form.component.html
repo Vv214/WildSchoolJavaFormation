@@ -1,0 +1,7 @@
+<div>
+  <form [formGroup]="commentForm" (submit)="addComment()">
+    <input type="text" name="author" placeholder="Nom utilisateur" formControlName="author">
+    <textarea name="content" formControlName="content"></textarea>
+    <button type="submit">Add comment</button>
+  </form>
+</div>

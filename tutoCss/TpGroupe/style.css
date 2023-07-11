@@ -45,3 +45,8 @@ article {
     display: flex;
     flex-direction: row;
 }
+
+.descriptionVideos {
+    max-width: vw;
+    padding-left: 12em
+}

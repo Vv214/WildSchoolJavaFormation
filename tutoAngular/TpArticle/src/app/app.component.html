@@ -1,0 +1,5 @@
+<app-article-form (articleEvent)="addArticle($event)"></app-article-form>
+<div *ngFor="let article of articles; let i = index">
+  <app-article (commentEvent)="addComment($event, i)" [title]="article.title" [content]="article.content" [comments]="article.comments"></app-article>
+</div>
+

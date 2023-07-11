@@ -1,0 +1,13 @@
+<input type="text" [(ngModel)]="title">
+<textarea [(ngModel)]="description"></textarea>
+<button (click)="newTicket()">ADD</button>
+<button (click)="deleteTicket()">DeleteMe</button>
+<!-- <button (click)="modifyTicket()">Modifylast</button> -->
+
+<div *ngFor="let ticket of tickets">
+    <h2>{{ticket.name}}</h2>
+    <p>{{ticket.description}}</p>
+    <button (click)="deleteTicket()">DeleteMe</button>
+    <button (click)="modifyMe()">ModifyMe</button>
+    <!-- <button (click)="modifyTicket()">Modifylast</button> -->
+</div>

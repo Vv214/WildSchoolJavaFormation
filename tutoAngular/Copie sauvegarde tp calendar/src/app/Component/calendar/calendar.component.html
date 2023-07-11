@@ -1,0 +1,42 @@
+<!-- <div class="placeholder">
+    <p class="month">{{moisActuel}}</p>
+    <p>{{nombreJoursMois}}</p>
+</div> -->
+
+
+<div class="calendar-container">
+    <div class="divcss">
+        <div class="month-selector">
+            <div>
+                <button class="button" (click)="changeMoisPrecedent(moisPrecedent, annee)">
+                    << </button>
+            </div>
+            <div class="afficher-month">{{grilleMois[moisAAfficher] }} </div>
+            <div class="afficher-annee">{{annee}} </div>
+            <div>
+                <button class="button" (click)="changeMoisSuivant(moisSuivant, annee)">
+                    >> </button>
+            </div>
+        </div>
+        <div class="week-container">
+            <div *ngFor="let jour of grilleSemaine" class="name-week">
+                <p class="jour">{{ jour }} </p>
+            </div>
+        </div>
+    </div>
+    <div class="divcss">
+        <div class="day-container">
+            <div class="day" *ngFor="let jour of tableauNombreJoursMoisEncours; let i = index"
+                [style.grid-column]="i === 0 ? premierJourMois : ''"
+                (click)="affichageJour(jour, grilleMois[moisAAfficher])">
+                <a [routerLink]="['/jour']" [queryParams]="{ id: jour, mois : grilleMois[moisAAfficher] }"></a>
+                <div>
+                    <p class="day-text">{{jour}}</p>
+                    <!-- <button class="day-text" (click)="affichageJour(jour)"><a [routerLink]="['/jour']"
+                            [queryParams]="{ id: jour }">
+                            {{jour}}
+                        </a></button> -->
+                </div>
+            </div>
+        </div>
+    </div>

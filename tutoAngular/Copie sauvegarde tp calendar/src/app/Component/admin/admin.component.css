@@ -1,0 +1,28 @@
+.detailRDV {
+/* cursor: pointer; */
+    background-color: aqua;
+}
+.formEdit{
+    background-color: yellow;
+}
+.admin{
+    background-color:  LightGray;
+    display: flex;
+}
+.detail{
+    background-color: aquamarine;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+  table {
+    width: 150px;
+  }
+
+  #listerlesRendezVous,
+#detailRendezVous,
+#rechercherRendezVous,
+#editerRendezVous {
+    flex: 1;
+}
